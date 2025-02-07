@@ -71,6 +71,7 @@ For more details, refer to [documents/requirements.md](documents/requirements.md
 ## 🏗️ Data Architecture
 
 The data architecture for this project follows Medallion Architecture **Bronze**, **Silver**, and **Gold** layers:
+
 ![Data Architecture](documents/data_architecture.png)
 
 1. **Bronze Layer**: Stores raw data as-is from the source systems. Data is ingested from CSV Files into SQL Server Database.
@@ -83,6 +84,7 @@ The data architecture for this project follows Medallion Architecture **Bronze**
 
 Relationships between tables in the Customer Relationship Management (CRM) and Enterprise Resource Planning (ERP) systems.
 The diagram is divided into two main sections: the left side represents the CRM system, and the right side represents the ERP system.
+
 ![Data Integration](documents/data_integration.png)
 
 ---
@@ -91,6 +93,7 @@ The diagram is divided into two main sections: the left side represents the CRM 
 
 The data flow diagram is illustrating the data lineage from source systems to different data layers. It shows the transformation
 and flow of data through different stages, ensuring data quality and readiness for analysis or reporting.
+
 ![Data Flow](documents/data_flow.png)
 
 ---
@@ -99,6 +102,7 @@ and flow of data through different stages, ensuring data quality and readiness f
 
 The diagram represents a star schema data model for a sales data mart. The star schema comprises three tables:
 **gold.dim_customers**, **gold.fact_sales**, and **gold.dim_products**.
+
 ![Data Model](documents/data_model.png)
 
 ---
