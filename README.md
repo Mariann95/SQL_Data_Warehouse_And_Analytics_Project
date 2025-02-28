@@ -55,6 +55,7 @@ Develop a modern data warehouse using SQL Server to consolidate sales data, enab
 ---
 
 ### BI: Analytics & Reporting (Data Analysis) 📊
+A comprehensive collection of SQL scripts for data exploration, analytics, and reporting. These scripts cover various analyses such as database exploration, measures and metrics, time-based trends, cumulative analytics, segmentation, and more. This repository contains SQL queries designed to help data analysts and BI professionals quickly explore, segment, and analyze data within a relational database. Each script focuses on a specific analytical theme and demonstrates best practices for SQL queries.
 
 #### Objective
 Develop SQL-based analytics to deliver detailed insights into:
@@ -111,27 +112,29 @@ The diagram represents a star schema data model for a sales data mart. The star 
 ```
 data-warehouse-project/
 │
-├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
+├── datasets/                               # Raw datasets used for the project (ERP and CRM data)
 │
-├── documents/                          # Project documentation and architecture details
-│   ├── data_architecture.drawio        # Draw.io file shows the project's architecture
-│   ├── data_catalog.md                 # Catalog of datasets, including field descriptions and metadata
-│   ├── data_flow.drawio                # Draw.io file for the data flow diagram
-│   ├── data_integration.drawio         # Draw.io file for how the tables are related
-│   ├── data_model.drawio               # Draw.io file for data model (star schema)
-│   ├── naming-conventions.md           # Consistent naming guidelines for tables, columns, and files
+├── documents/                              # Project documentation and architecture details
+│   ├── data_architecture.drawio            # Draw.io file shows the project's architecture
+│   ├── data_catalog.md                     # Catalog of datasets, including field descriptions and metadata
+│   ├── data_flow.drawio                    # Draw.io file for the data flow diagram
+│   ├── data_integration.drawio             # Draw.io file for how the tables are related
+│   ├── data_model.drawio                   # Draw.io file for data model (star schema)
+│   ├── naming-conventions.md               # Consistent naming guidelines for tables, columns, and files
 │
-├── scripts/                            # SQL scripts for ETL and transformations
-│   ├── bronze/                         # Scripts for extracting and loading raw data
-│   ├── silver/                         # Scripts for cleaning and transforming data
-│   ├── gold/                           # Scripts for creating analytical models
+├── scripts/                                # SQL scripts for ETL and transformations and for data exploration, analytics, and reporting
+│   ├── bronze/                             # Scripts for extracting and loading raw data
+│   ├── silver/                             # Scripts for cleaning and transforming data
+│   ├── gold/                               # Scripts for creating analytical models
+│   ├── Exploratory Data Analysis (EDA)/    # Scripts for understanding data
+│   ├── Advanced Data Analytics + Reports/  # Scripts for answering business questions
 │
-├── tests/                              # Test scripts and quality files
+├── tests/                                  # Test scripts and quality files
 │
-├── README.md                           # Project overview and instructions
-├── LICENSE                             # License information for the repository
-├── .gitignore                          # Files and directories to be ignored by Git
-└── requirements.txt                    # Dependencies and requirements for the project
+├── README.md                               # Project overview and instructions
+├── LICENSE                                 # License information for the repository
+├── .gitignore                              # Files and directories to be ignored by Git
+└── requirements.txt                        # Dependencies and requirements for the project
 ```
 ---
 
